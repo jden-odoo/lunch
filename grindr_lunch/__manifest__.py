@@ -11,6 +11,6 @@
     'category': 'Custom Development',
     'version': '1..0.0',
     'license': 'OPL-1',
-    'depends': ['lunch'],
+    'depends': ['lunch', 'survey'],
     'data': [],
 }
