@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="buffalo_office" model="hr.work.location">
+        <field name="name">Buffalo Office</field>
+        <field name="address_id" ref="base.main_partner"/>
+    </record>
+</odoo>

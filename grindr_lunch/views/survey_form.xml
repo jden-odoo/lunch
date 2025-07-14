@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="survey_form" model="ir.ui.view">
+        <field name="name">Grindr Lunch: Survey Form"</field>
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_send_survey']" position="before">
+                <button type="object" name="action_lunch_wizard" string="Create Lunch Menu"/>
+            </xpath>
+            <xpath expr="//field[@name='restrict_user_ids']" position="after">
+                <field name="date_deadline"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
