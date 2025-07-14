@@ -9,8 +9,10 @@
     'maintainer': 'Odoo Development Services',
     'website': 'https://www.odoo.com',
     'category': 'Custom Development',
-    'version': '1..0.0',
+    'version': '1.0.0',
     'license': 'OPL-1',
     'depends': ['lunch', 'survey'],
-    'data': [],
+    'data': [
+        "views/survey_survey_views.xml",
+    ],
 }

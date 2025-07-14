@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="survey_survey_view_form_inherit" model="ir.ui.view">
+            <field name="name">survey.survey.view.form.inherit.lunch</field>
+            <field name="model">survey.survey</field>
+            <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
+                    <page string="Responses" name="Responses">
+                        <field name="user_input_ids"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+</odoo>
