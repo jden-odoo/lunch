@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="survey_wizard_tree" model="ir.ui.view">
+        <field name="name">Grindr Lunch: Survey Wizard Form"</field>
+        <field name="model">lunch.item</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <header>
+                    <button string="Save" type="object" name="action_create_lines"/>
+                </header>
+                <field name="product_id"/>
+                <field name="description" widget="text"/>
+            </list>
+        </field>
+    </record>
+</odoo>

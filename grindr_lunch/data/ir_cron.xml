@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="close_survey_cron" model="ir.cron">
+        <field name="name">Grindr Lunch: Close surveys past deadline</field>
+        <field name="model_id" ref="survey.model_survey_survey"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_close_survey()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
